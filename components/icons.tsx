@@ -1,6 +1,9 @@
 import {
+  BellIcon,
   LucideProps,
+  MailIcon,
   Moon,
+  SearchIcon,
   SunMedium,
   Twitter,
   type Icon as LucideIcon,
@@ -12,6 +15,10 @@ export const Icons = {
   sun: SunMedium,
   moon: Moon,
   twitter: Twitter,
+  search: SearchIcon,
+  mail: MailIcon,
+  bell: BellIcon,
+
   logo: (props: LucideProps) => (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
       <path
@@ -28,4 +35,76 @@ export const Icons = {
       ></path>
     </svg>
   ),
+  // custom icon
+  menubar: (props: LucideProps) => (
+    <svg
+      {...props}
+      width={32}
+      height={32}
+      viewBox="0 0 32 32"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M21.3334 24V26.6667H6.66669V24H21.3334Z" fill="#4B5563" />
+      <path
+        d="M25.3334 7.99967V5.33301H10.6667V7.99967H25.3334Z"
+        fill="#4B5563"
+      />
+      <path d="M28 17.3337V14.667H4V17.3337H28Z" fill="#4B5563" />
+    </svg>
+  ),
+  dashboard: (props: LucideProps) => (
+    <svg
+      {...props}
+      width="26"
+      height="26"
+      viewBox="0 0 26 26"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9.8182 22.545H5.57577C4.4091 22.545 3.45456 21.5905 3.45456 20.4238V5.57531C3.45456 4.40865 4.4091 3.4541 5.57577 3.4541H9.8182C10.9849 3.4541 11.9394 4.40865 11.9394 5.57531V20.4238C11.9394 21.5905 10.9849 22.545 9.8182 22.545ZM16.1818 22.545H20.4243C21.5909 22.545 22.5455 21.5905 22.5455 20.4238V15.1208C22.5455 13.9541 21.5909 12.9996 20.4243 12.9996H16.1818C15.0152 12.9996 14.0606 13.9541 14.0606 15.1208V20.4238C14.0606 21.5905 15.0152 22.545 16.1818 22.545ZM22.5455 8.75713V5.57531C22.5455 4.40865 21.5909 3.4541 20.4243 3.4541H16.1818C15.0152 3.4541 14.0606 4.40865 14.0606 5.57531V8.75713C14.0606 9.9238 15.0152 10.8783 16.1818 10.8783H20.4243C21.5909 10.8783 22.5455 9.9238 22.5455 8.75713Z"
+        fill="currentColor"
+      />
+    </svg>
+  ),
+  hrm: (props: LucideProps) => (
+    <svg
+      {...props}
+      width="26"
+      height="26"
+      viewBox="0 0 26 26"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M17.2424 12.9994C18.9997 12.9994 20.4242 11.5749 20.4242 9.81756C20.4242 8.0603 18.9997 6.63574 17.2424 6.63574C15.4851 6.63574 14.0606 8.0603 14.0606 9.81756C14.0606 11.5749 15.4851 12.9994 17.2424 12.9994Z"
+        fill="white"
+      />
+      <path
+        d="M8.75759 9.81774C10.5149 9.81774 11.9394 8.39318 11.9394 6.63592C11.9394 4.87865 10.5149 3.4541 8.75759 3.4541C7.00033 3.4541 5.57578 4.87865 5.57578 6.63592C5.57578 8.39318 7.00033 9.81774 8.75759 9.81774Z"
+        fill="white"
+      />
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M11.9394 16.1808C11.9394 15.0088 12.8802 14.0596 14.0606 14.0596H20.4243C21.5962 14.0596 22.5455 14.9982 22.5455 16.1808V20.1368C22.5455 23.3473 11.9394 23.3473 11.9394 20.1368V16.1808Z"
+        fill="white"
+      />
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M14.0606 12.9991C14.061 12.7204 14.0064 12.4444 13.9 12.1869C13.7936 11.9293 13.6373 11.6953 13.4403 11.4983C13.2432 11.3012 13.0092 11.145 12.7516 11.0385C12.4941 10.9321 12.2181 10.8775 11.9394 10.8779H5.57577C4.39532 10.8779 3.45456 11.8293 3.45456 13.0023V17.0602C3.45456 19.0976 7.75425 19.7308 10.8788 19.1644V16.1873C10.8781 15.7692 10.9597 15.3552 11.1191 14.9687C11.2785 14.5821 11.5125 14.2308 11.8077 13.9348C12.1028 13.6387 12.4535 13.4037 12.8394 13.2432C13.2255 13.0826 13.6393 12.9997 14.0574 12.9991H14.0606Z"
+        fill="white"
+      />
+    </svg>
+  ),
+  briefcase: (props: LucideProps) => <svg></svg>,
+  archive: (props: LucideProps) => <svg></svg>,
+  workshop: (props: LucideProps) => <svg></svg>,
+  ship: (props: LucideProps) => <svg></svg>,
+  building: (props: LucideProps) => <svg></svg>,
+  bdCurrency: (props: LucideProps) => <svg></svg>,
+  basicParameter: (props: LucideProps) => <svg></svg>,
+  userManagement: (props: LucideProps) => <svg></svg>,
+  docs: (props: LucideProps) => <svg></svg>,
 }
